@@ -1,5 +1,5 @@
-FROM nginx:alpine
+FROM lab03_1_teamybr
 
-LABEL maintainer="YBR"
+COPY ./shared-dir /usr/share/nginx/html
 
-COPY ./custom-html /usr/share/nginx/html
+VOLUME /usr/share/nginx/html
